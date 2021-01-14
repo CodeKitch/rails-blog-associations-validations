@@ -65,3 +65,13 @@ Active Record handles errors when validations aren't met via user input on our f
 [Check Boxes](http://edgeapi.rubyonrails.org/classes/ActionView/Helpers/FormBuilder.html#method-i-collection_check_boxes)
 
 [Strong Params Array](http://stackoverflow.com/questions/16549382/how-to-permit-an-array-with-strong-parameters)
+
+rails generate migration AddContentToPosts content:text
+rails generate scaffold Tag --no-test-framework
+
+rails generate migration create_join_table :posts, :tags
+
+bin/rails generate migration CreateJoinTablePostTag post tag
+bin/rails generate migration CreateJoinTableCustomerProduct customer product
+
+
